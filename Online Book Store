@@ -1,0 +1,276 @@
+1.index.html :-
+<!DOCTYPE html>
+<html>
+<head>
+<title>INKSPIRE Book Store</title>
+</head>
+<frameset rows="10%, 90%" noresize>
+<frame src="header.html" name="header" noresize>
+<frameset cols="20%, 80%">
+<frame src="menu.html" name="menu" noresize>
+<frame src="home.html" name="content" noresize>
+</frameset>
+</frameset>
+</html>
+2.header.html :-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Header</title>
+<style>
+body {
+margin: 0;
+background-color: rgb(74, 70, 70);
+color: white;
+font-family: Arial, sans-serif;
+text-align: center;
+padding: 10px 0;
+}
+</style>
+</head>
+<body>
+<h1>INKSPIRE</h1>
+</body>
+</html>
+3.menu.html :-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+text-align: center;
+background-color: rgb(227, 223, 223);
+}
+h2 {
+margin: 20px 0;
+color: black;
+}
+.menu-button {
+display: block;
+padding: 10px;
+margin: 10px auto;
+width: 80%;
+text-align: center;
+background-color: white;
+text-decoration: none;
+color: black;
+border: 2px solid black;
+border-radius: 25px; /* Circular edges */
+}
+.menu-button:hover {
+background-color: black;
+color: white;
+}
+.active {
+background-color: black;
+color: white;
+}
+</style>
+<script>
+function activateTab(element) {
+// Remove 'active' class from all menu buttons
+const buttons = document.querySelectorAll('.menu-button');
+buttons.forEach(button => button.classList.remove('active'));
+// Add 'active' class to the clicked button
+element.classList.add('active');
+}
+</script>
+</head>
+<body>
+<h2>MENU</h2>
+<a href="home.html" target="content" class="menu-button"
+onclick="activateTab(this)">Home</a>
+<a href="login.html" target="content" class="menu-button"
+onclick="activateTab(this)">Login</a>
+<a href="catalogue.html" target="content" class="menu-button"
+onclick="activateTab(this)">Book Catalogue</a>
+</body>
+</html>
+4.home.html :-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home - INKSPIRE Book Store</title>
+<style>
+h1{
+text-align: center;
+}
+</style>
+</head>
+<body>
+<h1>Welcome to Inkspire BookStore</h1>
+<p>INKSPIRE Book Store is more than just a haven for book lovers—it's a 
+celebration of stories, knowledge, and creativity. Nestled at the crossroads of 
+literature and innovation, INKSPIRE offers a carefully curated selection of books 
+that cater to diverse interests and age groups. Whether you’re seeking timeless 
+classics, thought-provoking non-fiction, or the latest works in programming and 
+technology, INKSPIRE stands as a trusted companion on every reader's journey.</p>
+<p>What sets INKSPIRE apart is its dedication to inspiring minds. Beyond its 
+bookshelves, the store fosters a sense of community by hosting engaging literary 
+events, workshops, and discussions that bring together authors, thinkers, and 
+enthusiasts under one roof. It's a place where ideas flourish and connections are 
+made, creating an environment that uplifts and motivates.</p>
+<p>INKSPIRE also understands the importance of staying relevant in a fast-paced 
+world. With its seamless blend of tradition and modernity, the store integrates 
+digital offerings alongside its physical treasures. From eBooks to interactive 
+catalogs, readers have the freedom to explore and access knowledge in ways that 
+suit them best. Whether you're diving into a book in-store or browsing the digital 
+shelves from the comfort of your home, INKSPIRE ensures that your experience is 
+both enriching and convenient.</p>
+<p>At its core, INKSPIRE Book Store isn’t just a business—it’s a space for 
+growth, inspiration, and boundless imagination. It beckons every individual to 
+discover the power of words and the worlds they can unlock. When you step into 
+INKSPIRE, you don’t just buy books—you embrace a journey of learning and 
+creativity.</p>
+</body>
+</html>
+5.login.html :-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login - INKSPIRE Book Store</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+}
+.container {
+width: 300px;
+margin: 50px auto;
+padding: 20px;
+border: 1px solid black;
+background-color: #f9f9f9;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
+.container input {
+display: block;
+width: calc(100% - 20px); /* Ensures it fits within the container */
+margin: 10px 0;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+.container button {
+width: 100%;
+padding: 10px;
+background-color: black;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+.container button:hover {
+background-color: #333;
+}
+h2{
+text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Login</h2>
+<input type="email" placeholder="Email ID" required>
+<input type="password" placeholder="Password" required>
+<button>Login</button>
+</div>
+</body>
+</html>
+6.catalogue.html :-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Catalogue - INKSPIRE Book Store</title>
+</head>
+<body>
+<h1>Books Catalogue</h1>
+<ol>
+<li>
+<img src="atomicHC.jpg" width="100">
+<p>"Atomic Habits" by James Clear A practical guide to building good habits 
+and breaking bad ones. This book provides actionable strategies to make small 
+changes that lead to remarkable results over time.</p>
+<p>Price : 120 Rs</p>
+</li>
+<hr>
+<li>
+<img src="money.jpeg" width="100">
+<p>"The Psychology of Money" by Morgan Housel This book explores the complex 
+relationship between people and money, offering timeless lessons on wealth, greed, 
+and happiness.</p>
+<p>Price : 120 Rs</p>
+</li>
+<hr>
+<li>
+<img src="ikigai.jpeg" width="100">
+<p>"Ikigai: The Japanese Secret to a Long and Happy Life" by Héctor García 
+and Francesc Miralles A beautiful exploration of the Japanese concept of "Ikigai," 
+which means "reason for being." It provides insights into living a meaningful and 
+fulfilling life.</p>
+<p>Price : 160 Rs</p>
+</li>
+<hr>
+<li>
+<img src="rich.jpeg" width="100">
+<p>"Rich Dad Poor Dad" by Robert T. Kiyosaki A classic personal finance book 
+that contrasts two approaches to money management and wealth-building, based on the
+author's experiences with his two "dads."</p>
+<p>Price : 120 Rs</p>
+</li>
+<hr>
+<li>
+<img src="alchemist.jpg" width="100">
+<p>"The Alchemist" by Paulo Coelho A timeless tale of self-discovery and 
+following one's dreams, this novel follows Santiago, a shepherd boy, on his journey
+to find treasure.</p>
+<p>Price : 150 Rs</p>
+</li>
+<hr>
+<li>
+<img src="think.jpg" width="100">
+<p>"Think Like a Monk" by Jay Shetty Drawing from his experiences as a monk, 
+Jay Shetty shares wisdom and practical advice on how to lead a peaceful and 
+purposeful life.</p>
+<p>Price : 180 Rs</p>
+</li>
+<hr>
+<li>
+<img src="sapiens.jpg" width="100">
+<p>"Sapiens: A Brief History of Humankind" by Yuval Noah Harari This book 
+takes readers on a journey through the history of humanity, exploring how Homo 
+sapiens came to dominate the planet.</p>
+<p>Price : 120 Rs</p>
+</li>
+<hr>
+<li>
+<img src="fu.jpg" width="100">
+<p>"The Subtle Art of Not Giving a Fck" by Mark Manson* A counterintuitive 
+approach to living a good life, this book emphasizes the importance of focusing on 
+what truly matters.</p>
+<p>Price : 150 Rs</p>
+</li>
+<hr>
+<li>
+<img src="midn.jpeg" width="100">
+<p>"The Midnight Library" by Matt Haig A novel that explores the infinite 
+possibilities of life through the story of Nora, who discovers a library where she 
+can try out different versions of her life.</p>
+<p>Price : 180 Rs</p>
+</li>
+<hr>
+<li>
+<img src="5 am.jpg" width="100">
+<p>"The 5 AM Club" by Robin Sharma A motivational book that advocates waking 
+up early to maximize productivity and achieve personal and professional 
+success.</p>
+<p>Price : 120 Rs</p>
+</li>
+</ol>
+</body>
+</html>
