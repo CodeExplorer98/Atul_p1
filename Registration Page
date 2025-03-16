@@ -1,0 +1,37 @@
+<DOCTYPE html>
+<html>
+    <head>
+    </head>    
+        <body>
+            <h1>TARANG REGISTRATION PAGE</h1>
+            <form action="confirmation.html" method="post"><label for="name">Name of Student:</label><input type="text" id="name" name="name requred><br><br>
+            <label>Branch :</label><br>
+            <input type="radio" id="cse" name="branch" value="CSE" required>
+            <label for="ai">AI</label>
+            <input type="radio" id="ai" name="branch" value="AI">
+            <label for="cse">CSE</label>
+            <input type="radio" id="cse" name="branch" value="CSE">
+            <label for="etc">ETC</label>
+            <input type="radio" id="etc" name="branch" value="ETC">
+            <label for="ee">EE</label>
+            <input type="radio" id="ee" name="branch" value="EE">
+            <label for="ce">CE</label>
+            <input type="radio" id="ce" name="branch" value="CE"><br><br>
+            <label for="semester">Semester:</label><input type="text" id="semester" name="semester"required><br><br>
+            <label for="contact">Contact Number:</label><input type="tel" id="contact" patterns="[0-9]{10}" required><br>
+            <small>Format :1234567890</small><br><br><label>Participation :</label><br>
+            <label for="fashion">Fashion Show</label><input type="checkbox" id="fashion" name="Participation[]" value="Fashion Show"><label for="dance">Dance</label>
+            <input type="checkbox" id="dance" name="Participation[]" value="Dance">
+            <label for="drama">Drama</label>
+            <input type="checkbox" id="singing" name="Participation[]" value="Singing">
+            <label for ="art">ART</label>
+            <input type="checkbox" id="art" name="Participation[]" value="ART">
+            <label for="rangoli">Rangoli</label>
+            <input type="checkbox" id="rangoli" name="Participation[]" value="Rangoli"><br><br><button type="submit">Submit</button>
+            </form>
+        </body>
+    </html>
+    
+
+
+    
